@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"> <!-- Codificación -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+  <title>Casa en San Bernardo</title> <!-- Título -->
+  <link rel="stylesheet" href="./stilos.css"> <!-- Conexión al CSS -->
+</head>
+<body>
+
+  <!-- Encabezado con imagen y menú incluido -->
+  <header class="encabezado" id="inicio">
+
+    <!-- Menú de navegación -->
+    <nav class="menu">
+      <div class="logo">El Yeite</div>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="icono">&#9776;</label>
+      <ul class="enlaces">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#descripcion">Descripción</a></li>
+        <li><a href="#comodidades">Comodidades</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- Título de la página -->
+    <h1></h1>
+  </header>
+
+<!-- Sección de introducción con fondo de hojas + imagen de la casa -->
+<section class="intro" id="descripcion">
+  <div class="intro-contenido">
+    
+    <!-- Imagen de fondo decorativa -->
+    <div class="intro-fondo">
+      <img src="./img/introduccion.jpg.png" alt="Fondo hojas suaves" class="intro-img">
+    </div>
+
+    <!-- Imagen de la casa -->
+    <div class="intro-casa">
+      <img src="./img/casa1.jpg.jpg" alt="Frente de la casa en San Bernardo">
+    </div>
+</div>
+</section>
+
+<!-- Botón para mostrar galería -->
+<section class="actividades">
+  <button id="mostrarGaleria">Planes en San Bernardo</button>
+
+  <!-- Galería oculta al inicio -->
+  <div id="galeriaSanBernardo" class="galeria oculto">
+
+    <!-- Foto 1: Playa al atardecer -->
+    <div class="galeria-item">
+      <img src="./img/atardecer.jpg.png" alt="Atardecer en la playa">
+      <p> El mejor atardecer en la playa con tu pareja, amigos o mascotas 🌅</p>
+    </div>
+
+    <!-- Foto 2: Feria artesanal -->
+    <div class="galeria-item">
+      <img src="./img/feria.jpg.png" alt="Feria artesanal">
+      <p>Recorré la feria de artesanías local y llevate un recuerdo 🎡</p>
+    </div>
+
+    <!-- Foto 3: Cena frente al mar -->
+    <div class="galeria-item">
+      <img src="./img/cena.jpg.png" alt="Cena costera">
+      <p>Disfruta en familia o amigos de los mejores restaurantes 🍽️</p>
+    </div>
+
+    <!-- Foto 4: Peatonal con negocios -->
+    <div class="galeria-item">
+      <img src="./img/peatonal.jpg.png" alt="Peatonal con negocios">
+      <p>Paseá por la peatonal y explorá los negocios típicos 🛍️</p>
+    </div>
+
+    <!-- Foto 5: Cine en San Bernardo -->
+    <div class="galeria-item">
+      <img src="./img/cine.jpg.png" alt="Cine local">
+      <p>Viví una noche de película en el cine del centro 🎬</p>
+    </div>
+</div>
+</section>
+
+<!-- Sección: La casa - El Yeite -->
+<section class="galeria-casa" id="casa">
+  <h2>La casa - El Yeite</h2>
+  <p>Conocé El Yeite, una casa cómoda, luminosa y pensada para vos.</p>
+
+  <div class="grid-casa">
+    <img src="./img/casa2.jpg.jpg" alt="Frente de la casa">
+    <img src="./img/casa3.jpg.jpg" alt="Cocina equipada">
+    <img src="./img/casa4.jpg.jpg" alt="Habitación principal">
+    <img src="./img/casa5.jpg.jpg" alt="Living amplio">
+    <img src="./img/casa6.jpg.jpeg" alt="Parrilla en el patio">
+    <img src="./img/casa7.jpg.jpg" alt="Comedor con luz natural">
+    <img src="./img/casa8.jpg.jpeg" alt="Entrada de la casa">
+  </div>
+</section>
+
+<!-- Contenedor del lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="cerrar">&times;</span>
+  <img class="lightbox-img" src="" alt="Imagen ampliada">
+</div>
+
+<section class="comodidades" id="comodidades">
+  <h2></h2>
+  <div class="contenedor-img">
+    <img src="./img/comodidades.jpg.png" alt="Servicios y comodidades de El Yeite" class="imagen-comodidades">
+  </div>
+</section>
+
+<!-- Sección Ubicación -->
+<section class="ubicacion" id="ubicacion">
+  <h2>Ubicación</h2>
+  <p>📍 Estamos a solo 3 cuadras del mar, 4 cuadras de la peatonal y a minutos de Mar de Ajó.</p>
+
+  <div class="mapa-responsive">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.3594251629414!2d-56.6794384!3d-36.6958457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959ccecf6f9b7b65%3A0x9061e4c2959f1f5a!2sLa%20Rioja%201473%2C%20San%20Bernardo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1716416828327!5m2!1ses-419!2sar"
+      width="100%" height="350" style="border:0;" allowfullscreen=""
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+
+<!-- Sección Contacto -->
+<section class="contacto" id="contacto">
+  <h2>¿Tenés dudas o querés hacer una consulta?</h2>
+  <p>📩 No dudes en escribirnos, estamos para ayudarte.</p>
+  <p>📱 <strong>WhatsApp: 1136319160</strong></p>
+</section>
+
+
+  <!-- Pie de página -->
+  <footer class="pie">
+    <p>&copy; 2025 Casa en San Bernardo</p>
+  </footer>
+
+  <script>
+  // Mostrar/Ocultar galería
+  const boton = document.getElementById("mostrarGaleria");
+  const galeria = document.getElementById("galeriaSanBernardo");
+
+  boton.addEventListener("click", () => {
+    galeria.classList.toggle("oculto");
+  });
+</script>
+
+<script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.querySelector('.lightbox-img');
+  const cerrarBtn = document.querySelector('.cerrar');
+  const imagenes = document.querySelectorAll('.grid-casa img');
+
+  imagenes.forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+    });
+  });
+
+  cerrarBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  // Cerrar lightbox al hacer clic fuera de la imagen
+  lightbox.addEventListener('click', (e) => {
+    if (e.target !== lightboxImg) {
+      lightbox.style.display = 'none';
+    }
+  });
+</script>
+
+<a href="https://wa.me/541136319160" class="whatsapp-float" target="_blank" title="Escribinos por WhatsApp">
+  <img src="./img/wasa.jpg.png" alt="WhatsApp" class="whatsapp-icon">
+</a>
+
+</body>
+</html>
